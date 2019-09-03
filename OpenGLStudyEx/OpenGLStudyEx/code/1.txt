@@ -1,0 +1,48 @@
+/*
+*【一步步学OpenGL 1】-《打开一个窗口》
+https://blog.csdn.net/cordova/article/details/77986123
+*/
+
+#include "stdafx.h"
+#include <iostream>
+
+#define NDEBUG // 表示不使用debug的lib，使用release的lib，如果去除，将使用debug的lib
+#include <glew.h>   //glew必须在glut之前
+#include <glut.h> // 如果这里编译报错,请改为 #include <gl/glut.h>
+
+
+//渲染回调函数
+void RenderScenceCB()
+{
+    //清空颜色缓冲
+    glClear(GL_COLOR_BUFFER_BIT);
+    //交换前后缓存
+    glutSwapBuffers();
+}
+
+int main(int argc, char ** argv  ) 
+{   //初始化GLUT
+    glutInit(&argc,argv);
+
+    //显示模式：双缓冲、RGBA (通常这两个都需要设置)
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
+
+    //窗口设置
+    glutInitWindowSize(480,320);    //窗口尺寸
+    glutInitWindowPosition(100,100);//窗口位置
+    glutCreateWindow("Tutorial 01");//窗口标题
+
+    //开始渲染
+    glutDisplayFunc(RenderScenceCB);
+    
+    //缓冲清空后的颜色值
+    glClearColor(0.0f, 0.0f, 1.0f, 0.0f);
+
+    //通知开始GLUT内部循环
+    glutMainLoop();
+
+    return 0;
+}
+
+
+
