@@ -21,6 +21,15 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ogldev_math_3d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ogldev_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ogldev_util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -29,5 +38,16 @@
     <ClCompile Include="OpenGLStudyEx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ogldev_util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\04_shader.fs">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="shader\04_shader.vs">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
