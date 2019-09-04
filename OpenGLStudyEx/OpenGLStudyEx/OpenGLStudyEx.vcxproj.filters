@@ -44,10 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\04_shader.fs">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="shader\04_shader.vs">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shader\05_shader.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shader\05_shader.vs">
+      <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
 </Project>

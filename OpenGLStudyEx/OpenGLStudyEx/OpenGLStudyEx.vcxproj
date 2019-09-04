@@ -170,6 +170,8 @@
   <ItemGroup>
     <None Include="shader\04_shader.fs" />
     <None Include="shader\04_shader.vs" />
+    <None Include="shader\05_shader.fs" />
+    <None Include="shader\05_shader.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
