@@ -186,9 +186,12 @@
     <None Include="shader\08_shader.vs" />
     <None Include="shader\09_shader.fs" />
     <None Include="shader\09_shader.vs" />
+    <None Include="shader\10_shader.fs" />
+    <None Include="shader\10_shader.vs" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="code\1.txt" />
+    <Text Include="code\10.txt" />
     <Text Include="code\2.txt" />
     <Text Include="code\3.txt" />
     <Text Include="code\4.txt" />
