@@ -180,6 +180,8 @@
     <None Include="shader\05_shader.vs" />
     <None Include="shader\06_shader.fs" />
     <None Include="shader\06_shader.vs" />
+    <None Include="shader\07_shader.fs" />
+    <None Include="shader\07_shader.vs" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="code\1.txt" />
@@ -188,6 +190,7 @@
     <Text Include="code\4.txt" />
     <Text Include="code\5.txt" />
     <Text Include="code\6.txt" />
+    <Text Include="code\7.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
