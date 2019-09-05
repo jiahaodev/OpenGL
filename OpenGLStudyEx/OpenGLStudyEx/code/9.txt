@@ -1,6 +1,6 @@
 /*
-08  -《缩放变换》
-https://blog.csdn.net/cordova/article/details/52558804
+09 -《插值》
+https://blog.csdn.net/cordova/article/details/52562663
 */
 
 #include "stdafx.h"
@@ -21,8 +21,8 @@ GLuint VBO;
 GLuint gWorldLocation; //平移变换一致变量的句柄引用
 
 //定义vs  和 fs 的路径名
-const char* pVsFileName = "./shader/08_shader.vs";
-const char* pFsFileName = "./shader/08_shader.fs";
+const char* pVsFileName = "./shader/09_shader.vs";
+const char* pFsFileName = "./shader/09_shader.fs";
 
 /**
  渲染回调函数
@@ -208,7 +208,7 @@ int main(int argc, char ** argv) {
 	// 窗口设置
 	glutInitWindowSize(1024, 768);      // 窗口尺寸
 	glutInitWindowPosition(100, 100);  // 窗口位置
-	glutCreateWindow("Tutorial 08");   // 窗口标题
+	glutCreateWindow("Tutorial 09");   // 窗口标题
 
 	// 开始渲染
 	//glutDisplayFunc(RenderScenceCB);
