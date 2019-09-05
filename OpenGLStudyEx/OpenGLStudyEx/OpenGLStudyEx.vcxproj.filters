@@ -130,6 +130,12 @@
     <None Include="shader\11_shader.vs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="shader\12_shader.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shader\12_shader.vs">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="code\1.txt">
@@ -163,6 +169,9 @@
       <Filter>资源文件</Filter>
     </Text>
     <Text Include="code\11.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="code\12.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>
