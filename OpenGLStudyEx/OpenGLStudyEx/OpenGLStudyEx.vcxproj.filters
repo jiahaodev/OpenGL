@@ -45,6 +45,21 @@
     <ClInclude Include="popback1.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ogldev_pipeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ogldev_camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ogldev_atb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ogldev_keys.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ogldev_lights_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -57,6 +72,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ogldev_math_3d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ogldev_pipeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ogldev_atb.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -103,6 +124,12 @@
     <None Include="shader\10_shader.vs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="shader\11_shader.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shader\11_shader.vs">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="code\1.txt">
@@ -133,6 +160,9 @@
       <Filter>资源文件</Filter>
     </Text>
     <Text Include="code\10.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="code\11.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

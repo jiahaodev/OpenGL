@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);.\tools\freeglut3\include\GL;.\tools\glew\include\GL;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;.\tools\freeglut3\lib;.\tools\glew\lib\Release\Win32</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);.\tools\freeglut3\include\GL;.\tools\glew\include\GL;.\tools\AntTweakBar\include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;.\tools\freeglut3\lib;.\tools\glew\lib\Release\Win32;.\tools\AntTweakBar\lib</LibraryPath>
     <LibraryWPath>$(WindowsSDK_MetadataPath);.\tools\freeglut3\dll;.\tools\glew\dll\Win32;</LibraryWPath>
     <ExecutablePath>.\tools\freeglut3\dll;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
@@ -153,7 +153,12 @@
   <ItemGroup>
     <ClInclude Include="matrix3x3.h" />
     <ClInclude Include="matrix4x4.h" />
+    <ClInclude Include="ogldev_atb.h" />
+    <ClInclude Include="ogldev_camera.h" />
+    <ClInclude Include="ogldev_keys.h" />
+    <ClInclude Include="ogldev_lights_common.h" />
     <ClInclude Include="ogldev_math_3d.h" />
+    <ClInclude Include="ogldev_pipeline.h" />
     <ClInclude Include="ogldev_types.h" />
     <ClInclude Include="ogldev_util.h" />
     <ClInclude Include="popback1.h" />
@@ -163,7 +168,9 @@
     <ClInclude Include="vector3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ogldev_atb.cpp" />
     <ClCompile Include="ogldev_math_3d.cpp" />
+    <ClCompile Include="ogldev_pipeline.cpp" />
     <ClCompile Include="ogldev_util.cpp" />
     <ClCompile Include="OpenGLStudyEx.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -188,10 +195,13 @@
     <None Include="shader\09_shader.vs" />
     <None Include="shader\10_shader.fs" />
     <None Include="shader\10_shader.vs" />
+    <None Include="shader\11_shader.fs" />
+    <None Include="shader\11_shader.vs" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="code\1.txt" />
     <Text Include="code\10.txt" />
+    <Text Include="code\11.txt" />
     <Text Include="code\2.txt" />
     <Text Include="code\3.txt" />
     <Text Include="code\4.txt" />
