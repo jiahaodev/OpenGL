@@ -30,6 +30,21 @@
     <ClInclude Include="ogldev_util.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="matrix3x3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix4x4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vector3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pushpack1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="popback1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -39,6 +54,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ogldev_util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ogldev_math_3d.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -55,5 +73,31 @@
     <None Include="shader\05_shader.vs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="shader\06_shader.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shader\06_shader.vs">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="code\1.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="code\2.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="code\3.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="code\4.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="code\5.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="code\6.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

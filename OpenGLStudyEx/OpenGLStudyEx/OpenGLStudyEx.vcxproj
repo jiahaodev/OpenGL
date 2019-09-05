@@ -151,13 +151,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="matrix3x3.h" />
+    <ClInclude Include="matrix4x4.h" />
     <ClInclude Include="ogldev_math_3d.h" />
     <ClInclude Include="ogldev_types.h" />
     <ClInclude Include="ogldev_util.h" />
+    <ClInclude Include="popback1.h" />
+    <ClInclude Include="pushpack1.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="vector3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ogldev_math_3d.cpp" />
     <ClCompile Include="ogldev_util.cpp" />
     <ClCompile Include="OpenGLStudyEx.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -172,6 +178,16 @@
     <None Include="shader\04_shader.vs" />
     <None Include="shader\05_shader.fs" />
     <None Include="shader\05_shader.vs" />
+    <None Include="shader\06_shader.fs" />
+    <None Include="shader\06_shader.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="code\1.txt" />
+    <Text Include="code\2.txt" />
+    <Text Include="code\3.txt" />
+    <Text Include="code\4.txt" />
+    <Text Include="code\5.txt" />
+    <Text Include="code\6.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
