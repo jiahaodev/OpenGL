@@ -1,0 +1,3 @@
+[submodule "reference/ogldev_source"]
+	path = reference/ogldev_source
+	url = https://github.com/flcker/ogldev_source.git
