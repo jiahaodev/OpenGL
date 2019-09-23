@@ -4,3 +4,6 @@
 [submodule "reference/OpenGLDemo"]
 	path = reference/OpenGLDemo
 	url = https://github.com/jiangxh1992/OpenGLDemo.git
+[submodule "reference/LearnOpenGL"]
+	path = reference/LearnOpenGL
+	url = https://github.com/JoeyDeVries/LearnOpenGL.git
