@@ -10,3 +10,6 @@
 	path = reference/LearnOpenGL
 	url = https://github.com/JoeyDeVries/LearnOpenGL.git
 	branch = master
+[submodule "reference/glfw"]
+	path = reference/glfw
+	url = https://github.com/glfw/glfw.git
