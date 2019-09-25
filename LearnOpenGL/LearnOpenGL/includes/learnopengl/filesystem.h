@@ -20,7 +20,10 @@ public:
 private:
   static std::string const & getRoot()
   {
-    static char const * envRoot = getenv("LOGL_ROOT_PATH");
+	char *envRoot;
+	size_t len;
+	errno_t err = _dupenv_s(&envRoot, &len, "LOGL_ROOT_PATH");
+    //static char const * envRoot = _dupenv_s("LOGL_ROOT_PATH");
     static char const * givenRoot = (envRoot != nullptr ? envRoot : logl_root);
     static std::string root = (givenRoot != nullptr ? givenRoot : "");
     return root;
