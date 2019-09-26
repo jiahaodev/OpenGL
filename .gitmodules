@@ -8,7 +8,7 @@
 	branch = master
 [submodule "reference/LearnOpenGL"]
 	path = reference/LearnOpenGL
-	url = https://github.com/JoeyDeVries/LearnOpenGL.git
+	url = https://github.com/jiahaodev/LearnOpenGL.git
 	branch = master
 [submodule "reference/glfw"]
 	path = reference/glfw
