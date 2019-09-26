@@ -24,6 +24,15 @@
     <ClInclude Include="includes\targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="includes\root_directory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\image_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c">
@@ -35,5 +44,48 @@
     <ClCompile Include="src\stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\stb_image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\image_helper.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\3.3.shader.fs" />
+    <None Include="shader\3.3.shader.vs" />
+    <None Include="shader\4.1.texture.fs" />
+    <None Include="shader\4.1.texture.vs" />
+    <None Include="shader\4.2.texture.fs" />
+    <None Include="shader\4.2.texture.vs" />
+    <None Include="shader\4.3.texture.fs" />
+    <None Include="shader\4.3.texture.vs" />
+    <None Include="shader\4.4.texture.fs" />
+    <None Include="shader\4.4.texture.vs" />
+    <None Include="shader\4.5.texture.fs" />
+    <None Include="shader\4.5.texture.vs" />
+    <None Include="shader\5.1.transform.fs" />
+    <None Include="shader\5.1.transform.vs" />
+    <None Include="shader\5.2.transform.fs" />
+    <None Include="shader\5.2.transform.vs" />
+    <None Include="shader\6.1.coordinate_systems.fs" />
+    <None Include="shader\6.1.coordinate_systems.vs" />
+    <None Include="shader\6.2.coordinate_systems.fs" />
+    <None Include="shader\6.2.coordinate_systems.vs" />
+    <None Include="shader\6.3.coordinate_systems.fs" />
+    <None Include="shader\6.3.coordinate_systems.vs" />
+    <None Include="shader\1.model_loading.fs" />
+    <None Include="shader\1.model_loading.vs" />
+    <None Include="shader\7.1.camera.fs" />
+    <None Include="shader\7.1.camera.vs" />
+    <None Include="shader\7.2.camera.fs" />
+    <None Include="shader\7.2.camera.vs" />
+    <None Include="shader\7.3.camera.fs" />
+    <None Include="shader\7.3.camera.vs" />
+    <None Include="shader\7.4.camera.fs" />
+    <None Include="shader\7.4.camera.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\assimp.lib" />
   </ItemGroup>
 </Project>
