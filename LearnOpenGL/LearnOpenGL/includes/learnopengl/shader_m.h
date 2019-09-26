@@ -53,18 +53,18 @@ public:
         vertex = glCreateShader(GL_VERTEX_SHADER);
         glShaderSource(vertex, 1, &vShaderCode, NULL);
         glCompileShader(vertex);
-        checkCompileErrors(vertex, "VERTEX");
+        checkCompileErrors(vertex, "VERTEX", vertexPath);
         // fragment Shader
         fragment = glCreateShader(GL_FRAGMENT_SHADER);
         glShaderSource(fragment, 1, &fShaderCode, NULL);
         glCompileShader(fragment);
-        checkCompileErrors(fragment, "FRAGMENT");
+        checkCompileErrors(fragment, "FRAGMENT", fragmentPath);
         // shader Program
         ID = glCreateProgram();
         glAttachShader(ID, vertex);
         glAttachShader(ID, fragment);
         glLinkProgram(ID);
-        checkCompileErrors(ID, "PROGRAM");
+        checkCompileErrors(ID, "PROGRAM",NULL);
         // delete the shaders as they're linked into our program now and no longer necessery
         glDeleteShader(vertex);
         glDeleteShader(fragment);
@@ -138,7 +138,7 @@ public:
 private:
     // utility function for checking shader compilation/linking errors.
     // ------------------------------------------------------------------------
-    void checkCompileErrors(GLuint shader, std::string type)
+    void checkCompileErrors(GLuint shader, std::string type,const char* path)
     {
         GLint success;
         GLchar infoLog[1024];
@@ -147,6 +147,7 @@ private:
             glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
             if (!success)
             {
+				std::cout << "ERROR Path: " << path << std::endl;
                 glGetShaderInfoLog(shader, 1024, NULL, infoLog);
                 std::cout << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
             }
