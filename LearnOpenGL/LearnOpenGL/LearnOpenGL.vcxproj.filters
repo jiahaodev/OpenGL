@@ -35,9 +35,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\glad.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\LearnOpenGL.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -47,7 +44,7 @@
     <ClCompile Include="src\stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="includes\image_helper.c">
+    <ClCompile Include="src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

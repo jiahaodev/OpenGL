@@ -77,6 +77,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);.\includes;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;.lib;</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -157,7 +159,6 @@
     <ClInclude Include="includes\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="includes\image_helper.c" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\LearnOpenGL.cpp" />
     <ClCompile Include="src\stb_image.cpp" />
