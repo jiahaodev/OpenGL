@@ -1,2 +1,0 @@
-# LearnOpenGL-BreakOut
-基于OpenGL的打砖块小游戏，LearnOpenGL实战部分的示例项目
