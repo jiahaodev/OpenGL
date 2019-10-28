@@ -14,3 +14,6 @@
 	path = reference/glfw
 	url = https://github.com/glfw/glfw.git
 
+[submodule "reference/BreakOut"]
+	path = reference/BreakOut
+	url = https://github.com/jiahaodev/LearnOpenGL-BreakOut
